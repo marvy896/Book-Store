@@ -29,7 +29,7 @@ export default function App() {
           }}
         >
           <Text style={{ fontSize: 18, color: "green", textAlign: "center" }}>
-            {data.title}
+            {data}
           </Text>
           <Text
             style={{
@@ -43,7 +43,7 @@ export default function App() {
           </Text>
           <FlatList
             accessibilityLabel="books"
-            data={data.articles}
+            data={data}
             keyExtractor={({ id }, index) => id}
             renderItem={({ item }) => (
               <Text testID="book">{item.id + ". " + item.title}</Text>
