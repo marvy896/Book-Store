@@ -28,9 +28,6 @@ export default function App() {
             justifyContent: "space-between",
           }}
         >
-          <Text style={{ fontSize: 18, color: "green", textAlign: "center" }}>
-            {data}
-          </Text>
           <Text
             style={{
               fontSize: 14,
